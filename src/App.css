@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Fira Code', sans-serif !important;
+}
+
+html {
+  min-height: 100vh;
+}
+
+
+
+body {
+  min-height: 100vh;
+}
+
+#root .App {
+  min-height: 100vh;
+}
+
+.pro-sidebar .pro-menu {
+  padding: 0 !important;
+}
+
+.sidebar-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.pro-sidebar .pro-sidebar-inner{
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.sidebar-header img {
+  width: 50px;
+}
+
+.menu-item {
+  padding: 10px;
+}
+.pro-menu-item {
+  transition: all 0.3s ease;
+}
+
+.pro-menu-item:hover  {
+  background-color: #ccc;
+  color: black ;
+}
+
+.pro-menu-item:hover a {
+  color: black !important;
+}
+
+.pro-inner-item {
+  display: flex;
+  align-items: center;  
+}
+
+.pro-menu-item span {
+  transition: all .3s ease;
+}
+
+
+.pro-item-content a{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.active {
+  background-color: #ccc;
+  color: black;
+}
+.active a {
+  color: black !important;
+}
+
+.header-container {
+  background-image: url('https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/169144183_4045671552177476_1974053443276961274_n.png?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=wPbFRXJPrVYAX8DRqEV&_nc_ht=scontent.fhan14-2.fna&oh=00_AT9FvXYv6NqDw6d4rAhJxrIUyiU7-HO_cb3-WmVKkRCgpw&oe=62644113');
+  background-position: center;
+  min-height: 200px;
+}
