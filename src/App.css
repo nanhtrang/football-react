@@ -133,3 +133,18 @@ body {
   background-position: center;
   min-height: 200px;
 }
+
+.content-container {
+  margin-left: 270px;
+}
+.side-bar {
+  width: 270px;
+  position: fixed;
+}
+.content-container {
+  width: calc(100%-270px) !important;
+}
+
+.country-logo {
+  height: 100px
+}
