@@ -16,16 +16,18 @@ function getCountries() {
   });
 }
 
-function getLeagues(callback, fail) {
-  http.GET(
-    `${properties.host}${path.get_leagues}`,
-    (response) => {
-      callback(response);
-    },
-    (error) => {
-      fail(error);
-    }
-  );
+function getLeagues(id) {
+  return new Promise((resolve, reject) => {
+    http.GET(
+      `${properties.host}${path.get_leagues}&country_id=${id}`,
+      (response) => {
+        resolve(response);
+      },
+      (error) => {
+        reject(error);
+      }
+    );
+  });
 }
 
 function getTeams(leagueId, callback, fail) {

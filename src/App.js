@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home/Home";
+import League from "./pages/League/League";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/league" exact element={<Home />} />
+          <Route path="/league/:id" exact element={<League />} />
           <Route path="/teams" exact element={<Home />} />
           <Route path="/players" exact element={<Home />} />
         </Routes>
